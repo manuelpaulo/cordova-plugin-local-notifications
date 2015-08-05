@@ -23,7 +23,8 @@
     </engines>
 
     <!-- dependencies -->
-    <dependency id="org.apache.cordova.device" />
+    //<dependency id="org.apache.cordova.device" />
+    <dependency id="cordova-plugin-device" />
 
     <!-- info -->
     <info>
@@ -133,8 +134,9 @@
             <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
         </config-file>
 
-        <lib-file src="libs/android/android-support-v4.jar" />
-
+        //<lib-file src="libs/android/android-support-v4.jar" />
+        <framework src="com.android.support:support-v4:+" />
+        
         <source-file
             src="src/android/LocalNotification.java"
             target-dir="src/de/appplant/cordova/plugin/localnotification" />
